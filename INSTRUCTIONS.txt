@@ -1,0 +1,161 @@
+====================================================
+  DEV-MOSHEH PORTFOLIO — DEPLOYMENT INSTRUCTIONS
+  Emmanuel Moses | devmosheh.com
+====================================================
+
+This portfolio is now a MULTI-PAGE static site (not a single
+index.html anymore). Each section lives on its own URL for
+better SEO, faster loads, and cleaner sharing.
+
+── FILES IN THIS FOLDER ───────────────────────────
+
+  index.html         Home (hero + tech stack)
+  about.html         About — bio + skills
+  services.html      Services
+  projects.html      Selected projects
+  contact.html       Contact form (Netlify Forms)
+
+  styles.css         Shared stylesheet (cached across pages)
+  script.js          Shared JavaScript (nav, theme, typewriter, form)
+  assets/
+    devmosheh.jpg          Hero portrait
+    devmosheh-about.jpg    About-page portrait (smaller)
+
+  sitemap.xml        Submit this to Google Search Console
+  robots.txt         Allows all crawlers
+  _redirects         Enables clean URLs on Netlify (/about, /contact...)
+  _headers           Long-cache for assets + security headers
+  INSTRUCTIONS.txt   This file
+
+
+── STEP 1: DEPLOY TO NETLIFY ──────────────────────
+
+1. Go to https://app.netlify.com
+2. Log in to your Netlify account.
+3. Click "Add new site" → "Deploy manually"
+4. Drag and drop the ENTIRE "Emmanuel Dev-Mosheh" folder
+   onto the drop zone.
+5. Netlify will deploy and give you a URL like:
+   https://random-name-123.netlify.app
+
+Pages will be reachable at clean URLs thanks to `_redirects`:
+   /          → home
+   /about     → about page
+   /services  → services
+   /projects  → projects
+   /contact   → contact
+
+The original .html URLs (/about.html, etc.) also still work.
+
+CUSTOM DOMAIN (e.g. devmosheh.com):
+- Netlify dashboard → Site Settings → Domain management → Add custom domain
+- Follow the DNS instructions Netlify provides
+- HTTPS/SSL is enabled automatically (free)
+
+After you set a real domain, open each .html file and replace
+the canonical / og:url / og:image URLs that currently point to
+https://devmosheh.com with your final domain. Same for
+sitemap.xml and robots.txt.
+
+
+── STEP 2: CONTACT FORM (NETLIFY FORMS) ──────────
+
+The form on contact.html is already configured with
+data-netlify="true". Netlify detects it on the first deploy.
+
+To get email notifications:
+  1. Netlify dashboard → Forms → "contact"
+  2. Form notifications → Add notification → Email notification
+  3. Enter your email → Save
+
+Spam protection: a honeypot field is embedded, plus Netlify's
+built-in filtering. Free plan = 100 submissions / month.
+
+
+── STEP 3: UPDATE YOUR LINKS ──────────────────────
+
+Open the files and replace these placeholders:
+
+1. GitHub & LinkedIn — in the footer of EVERY page
+   (index.html, about.html, services.html, projects.html, contact.html)
+   Search:  aria-label="GitHub"   and   aria-label="LinkedIn"
+   Replace href="#" with your real profile URLs.
+
+2. Project links — in projects.html
+   Search:  aria-label="View ..."
+   Replace href="#" with each project's live URL once it's up.
+
+
+── STEP 4: UPDATING PROJECTS ──────────────────────
+
+OPTION A — Edit HTML directly (fastest):
+   Open projects.html, find the `proj-card` articles, change
+   the title / description / tags / live link, save, re-deploy.
+
+OPTION B — DECAP CMS (free, Git-based):
+   1. Push the folder to a GitHub repo
+   2. Netlify → Site Settings → Build & deploy → Link to Git
+   3. Add an /admin folder with Decap config.yml
+   4. Edit content visually at yoursite.netlify.app/admin
+
+
+── STEP 5: UPDATING THE PORTRAIT ──────────────────
+
+Replace assets/devmosheh.jpg (hero) and
+assets/devmosheh-about.jpg (about page) with new images of the
+same names. Recommended specs:
+   devmosheh.jpg        — 800×800 square, ~100 KB
+   devmosheh-about.jpg  — 500×625 (4:5), ~50 KB
+Keep them under 200 KB each for fast loads.
+
+
+── STEP 6: THEME TOGGLE ───────────────────────────
+
+The dark/light mode toggle lives in the top-right of the nav.
+Preference is saved in localStorage and shared across pages.
+Default on first visit: DARK.
+
+
+── STEP 7: PERFORMANCE NOTES ──────────────────────
+
+Already optimised:
+  [x] Multi-page architecture (smaller initial HTML per page)
+  [x] Shared styles.css + script.js cached across pages
+  [x] Long-cache headers for assets (_headers)
+  [x] Real JPEG portraits instead of inline base64
+  [x] fetchpriority="high" on the hero image
+  [x] loading="lazy" on the about-page image
+  [x] Fonts preloaded + display=swap
+  [x] System-font fallback chain (no flash of unstyled text)
+  [x] Defer attribute on script tag
+
+
+── STEP 8: SEO CHECKLIST ──────────────────────────
+
+Already done:
+  [x] Unique title + description per page
+  [x] Open Graph + Twitter Card per page
+  [x] Canonical URL per page (self-referencing)
+  [x] og:image on every leaf page
+  [x] Semantic HTML (header, main, section, article, footer)
+  [x] Single <h1> per page
+  [x] aria-current="page" on the active nav link
+  [x] Aria labels for accessibility
+  [x] sitemap.xml with all 5 pages
+  [x] robots.txt allowing all crawlers
+  [x] Theme-color meta for mobile browser chrome
+  [x] SVG favicon (no extra request)
+
+Still to do once you have a live domain:
+  [ ] Replace devmosheh.com with your real domain in all .html files,
+      sitemap.xml, and robots.txt
+  [ ] Submit sitemap to https://search.google.com/search-console
+  [ ] (Optional) Add Google Analytics or Plausible
+
+
+── SUPPORT ─────────────────────────────────────────
+
+Multi-page version built for Dev-Mosheh.
+For changes, open a new chat and paste the relevant section.
+
+====================================================
