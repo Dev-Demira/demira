@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://devmosheh.com/sitemap.xml
+Sitemap: https://demira.online/sitemap.xml
