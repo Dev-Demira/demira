@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://devmosheh.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://devmosheh.com/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devmosheh.com/services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://devmosheh.com/projects.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://devmosheh.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://demira.online</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://demira.online/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://demira.online/services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://demira.online/projects.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://demira.online/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
