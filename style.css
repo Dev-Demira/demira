@@ -875,6 +875,7 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
 }
 
 
+
 /* --- ABOUT: grid layout on desktop --- */
 @media (min-width: 1025px) {
   .about-grid {
