@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Message Sent — Demira</title>
+<meta name="description" content="Thanks for reaching out. Emmanuel Moses will be in touch within 24 hours.">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#F5F0E8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="success-body">
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<header class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html#top" class="brand" aria-label="Demira — home">
+      <img src="logo-placeholder.png" alt="Demira logo" width="40" height="40" class="brand-logo">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-primary nav-cta">Start a Project</a>
+  </div>
+</header>
+
+<main id="main" class="success-main">
+  <div class="wrap success-wrap">
+    <p class="eyebrow">Message Sent</p>
+    <h1 class="success-title">Thank you.<br>I got your <em>message.</em></h1>
+    <p class="success-copy">I'll get back to you within 24 hours. If your project is urgent, feel free to message me on WhatsApp.</p>
+    <div class="success-ctas">
+      <button type="button" id="goBackBtn" class="btn btn-primary">← Go Back</button>
+      <a href="https://wa.me/2349059639220" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12.04 2.5c-5.24 0-9.5 4.24-9.5 9.47 0 1.67.44 3.3 1.27 4.74L2.5 21.5l4.94-1.29a9.5 9.5 0 0 0 4.6 1.17h.01c5.24 0 9.5-4.24 9.5-9.47 0-2.53-.99-4.9-2.78-6.69a9.44 9.44 0 0 0-6.73-2.72z"/></svg>
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="logo-placeholder.png" alt="Demira logo" width="40" height="40" class="brand-logo">
+      <p class="foot-tag">Websites that work while you sleep.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="footer-contact">
+      <a href="mailto:devmosheh@gmail.com" aria-label="Send an email to Demira">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z M4 6l8 7 8-7"/></svg>
+        Send an Email
+      </a>
+      <a href="https://wa.me/2349059639220" target="_blank" rel="noopener noreferrer" aria-label="Message Demira on WhatsApp">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12.04 2.5c-5.24 0-9.5 4.24-9.5 9.47 0 1.67.44 3.3 1.27 4.74L2.5 21.5l4.94-1.29a9.5 9.5 0 0 0 4.6 1.17h.01c5.24 0 9.5-4.24 9.5-9.47 0-2.53-.99-4.9-2.78-6.69a9.44 9.44 0 0 0-6.73-2.72z"/></svg>
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+  <p class="copyline">© 2026 Demira · Emmanuel Moses. Designed and built in Nigeria. Working worldwide.</p>
+</footer>
+
+<script>
+  (function () {
+    // Signal the contact form to reset when the user returns to it
+    try { sessionStorage.setItem('demira-reset-contact-form', '1'); } catch (e) {}
+    var btn = document.getElementById('goBackBtn');
+    if (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var sameOriginReferrer = document.referrer && document.referrer.indexOf(location.host) !== -1;
+        if (sameOriginReferrer && window.history.length > 1) {
+          window.history.back();
+        } else {
+          window.location.href = 'index.html#contact';
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>

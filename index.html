@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Demira — Websites That Work While You Sleep</title>
+<meta name="description" content="I design and build fast, high-converting websites for businesses and brands that refuse to look average online. Based in Nigeria. Trusted by clients globally">
+<meta name="author" content="Emmanuel Moses">
+<meta name="theme-color" content="#F5F0E8">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="web developer Nigeria, premium web design, landing page developer, React developer, restaurant website developer, Demira, Emmanuel Moses">
+<link rel="canonical" href="https://demira.online">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Demira — Websites That Work While You Sleep">
+<meta property="og:description" content="I build fast, thoughtful, high-converting websites for businesses that refuse to look average online. Working with clients across Nigeria and worldwide.">
+<meta property="og:image" content="https://demira.online/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://demira.online">
+<meta property="og:site_name" content="Demira">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Demira — Websites That Work While You Sleep">
+<meta name="twitter:description" content="Custom websites for businesses that refuse to look average online.">
+<meta name="twitter:image" content="https://demira.online/og-image.jpg">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+
+<link rel="preload" as="image" href="hero-bg-1-desktop.webp" media="(min-width: 1200px)">
+<link rel="preload" as="image" href="hero-bg-1-tablet.webp" media="(min-width: 768px) and (max-width: 1199px)">
+<link rel="preload" as="image" href="hero-bg-1-mobile.webp" media="(max-width: 767px)">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Demira",
+  "description": "Custom web development services for businesses in Nigeria and worldwide.",
+  "url": "https://demira.online",
+  "image": "https://demira.online/og-image.jpg",
+  "priceRange": "$$",
+  "serviceType": "Web Development",
+  "areaServed": { "@type": "Place", "name": "Worldwide" },
+  "address": { "@type": "PostalAddress", "addressCountry": "NG" },
+  "email": "devmosheh@gmail.com",
+  "telephone": "+2349059639220",
+  "founder": {
+    "@type": "Person",
+    "name": "Emmanuel Moses",
+    "jobTitle": "Web Developer",
+    "url": "https://demira.online"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Emmanuel Moses",
+  "alternateName": "Demira",
+  "url": "https://demira.online",
+  "image": "https://demira.online/portrait-hero-desktop.webp",
+  "jobTitle": "Web Developer",
+  "email": "devmosheh@gmail.com",
+  "telephone": "+2349059639220",
+  "worksFor": { "@type": "Organization", "name": "Demira" },
+  "address": { "@type": "PostalAddress", "addressCountry": "NG" }
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="Demira — home">
+      <img src="logo-placeholder.png" alt="Demira logo" width="40" height="40" class="brand-logo">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary nav-cta">Start a Project</a>
+    <button class="hamburger" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="menu-overlay" id="menuOverlay" hidden></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
+    <button class="menu-close" id="menuClose" aria-label="Close menu" type="button">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="mobile-menu-links" aria-label="Mobile primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-accent btn-mobile-cta">
+      Start a Project
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </aside>
+</header>
+
+<main id="main">
+
+<section id="top" class="hero">
+  
+  <!--
+  <div class="hero-bg" aria-hidden="true">
+    <picture class="hero-bg-img is-active">
+      <source media="(min-width: 1200px)" srcset="hero-bg-1-desktop.webp">
+      <source media="(min-width: 768px)" srcset="hero-bg-1-tablet.webp">
+      <img src="hero-bg-1-mobile.webp" alt="" loading="eager" fetchpriority="high">
+    </picture>
+    <div class="hero-bg-scrim"></div>
+  </div>
+-->
+
+  <div class="wrap hero-grid hero-grid--solo">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">Available for work — Worldwide</p>
+      <h1 class="hero-title reveal-words">
+        Websites that<br>
+        work while<br>
+        you <em>sleep.</em>
+      </h1>
+      <p class="hero-sub reveal">I design and build fast, high-converting websites for businesses and brands that refuse to look average online. Based in Nigeria. Trusted by clients globally</p>
+      <div class="hero-ctas reveal">
+        <a href="#work" class="btn btn-primary">See Selected Work</a>
+        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div><span class="stat-num" data-count="5">0<em>+</em></span><span class="stat-lbl">Projects launched</span></div>
+        <div><span class="stat-num" data-count="5">0<em>+</em></span><span class="stat-lbl">Years building the web</span></div>
+        <div><span class="stat-num" data-count="24" data-suffix="h">0h</span><span class="stat-lbl">Average Reply time</span></div>
+        
+                <div><span class="stat-num" data-count="100" data-suffix="%">0h</span><span class="stat-lbl">Client Satisfaction</span></div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="eyebrow reveal">Selected Work — 2024 / 2025</p>
+      <h2 class="section-title reveal-words">Products I've built<br>that solve real<br>problems.</h2>
+    </header>
+
+    <article class="project reveal">
+      <div class="project-media">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="project-restaurant-desktop.webp">
+          <source media="(min-width: 768px)" srcset="project-restaurant-tablet.webp">
+          <img src="project-restaurant-mobile.webp" alt="DEMIRA Restaurant website, wood-fired continental cuisine" loading="lazy" width="1600" height="1000">
+        </picture>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">DEMIRA — Restaurant</h3>
+        <p class="project-desc">A multi-page restaurant site with a sticky menu, live reservations, a proper gallery, and SEO that actually gets picked up.</p>
+        <p class="meta">Hospitality · 2025 · HTML · CSS · JavaScript</p>
+        <a class="btn btn-primary btn-live" href="https://demira-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer">
+          View Live Site
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 4h6v6M20 4L10 14M6 6h4M6 6v12h12v-4"/></svg>
+        </a>
+      </div>
+    </article>
+    <hr class="ember-rule">
+
+    <article class="project reveal">
+      <div class="project-media project-media--placeholder" aria-hidden="true">
+        <span class="ph-icon">🏆</span>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Certificate Generator</h3>
+        <p class="project-desc">Upload a CSV, pick a template, send branded certificates to every recipient. Hours of manual work compressed into one click.</p>
+        <p class="meta">Tools · 2024 · React · Supabase · Resend</p>
+        <button type="button" class="btn btn-live btn-live--disabled" disabled aria-disabled="true">
+          Coming Soon
+        </button>
+      </div>
+    </article>
+    <hr class="ember-rule">
+
+    <article class="project reveal">
+      <div class="project-media project-media--placeholder" aria-hidden="true">
+        <span class="ph-icon">🔗</span>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Link-in-Bio Tool</h3>
+        <p class="project-desc">A creator-first link hub with analytics, custom themes, and social integration. Everything Linktree does, none of the monthly bill.</p>
+        <p class="meta">SaaS · 2024 · React · Tailwind · MySQL</p>
+        <button type="button" class="btn btn-live btn-live--disabled" disabled aria-disabled="true">
+          Coming Soon
+        </button>
+      </div>
+    </article>
+    <hr class="ember-rule">
+
+    <article class="project reveal">
+      <div class="project-media project-media--placeholder" aria-hidden="true">
+        <span class="ph-icon">📄</span>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Invoice Generator</h3>
+        <p class="project-desc">Fill in the client details, preview an invoice, export a clean PDF in under a minute. Built for freelancers who hate paperwork.</p>
+        <p class="meta">Tools · 2024 · React · TypeScript · PDF.js</p>
+        <button type="button" class="btn btn-live btn-live--disabled" disabled aria-disabled="true">
+          Coming Soon
+        </button>
+      </div>
+    </article>
+    <hr class="ember-rule">
+
+    <article class="project reveal">
+      <div class="project-media project-media--placeholder" aria-hidden="true">
+        <span class="ph-icon">🔧</span>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">NeuAuth UI Kit</h3>
+        <p class="project-desc">A neumorphism-styled login and sign-up template you can drop straight into a project. Clean, modern, ready to ship.</p>
+        <p class="meta">UI Kit · 2024 · HTML · CSS · JavaScript</p>
+        <button type="button" class="btn btn-live btn-live--disabled" disabled aria-disabled="true">
+          Coming Soon
+        </button>
+      </div>
+    </article>
+
+    <p class="closing-note reveal">More work in the vault.<br><em>Let's talk about your project next.</em></p>
+  </div>
+</section>
+
+<section id="about" class="section section-alt grain">
+  <div class="wrap about-grid">
+    <figure class="about-photo reveal portrait-glow portrait-neon" data-parallax="0.08">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="portrait-about-desktop.webp">
+        <source media="(min-width: 768px)" srcset="portrait-about-tablet.webp">
+        <img src="portrait-about-mobile.webp" alt="Emmanuel Moses at work, portrait in warm natural light" loading="lazy" width="900" height="1125">
+      </picture>
+      <span class="photo-loc"><span class="online-dot" aria-label="Currently online and responsive"></span>Nigeria</span>
+    </figure>
+    <br/>
+    <div class="about-copy">
+      <p class="eyebrow reveal">About — The Person Behind The Work</p>
+      <h2 class="section-title reveal-words">I'm Emmanuel Moses.<br>I build websites<br>that <em>earn their keep.</em></h2>
+      <p class="about-body reveal">For over five years I've been building websites for businesses that want more than a digital brochure.</p>
+      <p class="about-body reveal">My work runs on one belief: a website should be your hardest-working salesperson. Fast to load. Nice to look at. Ruthless about pushing visitors toward the action that matters.</p>
+      <p class="about-body reveal">I work with restaurants, service providers, brands, and independent operators. Some are here in Nigeria. Some are on the other side of the world. They all want the same thing — their business to look online the way it looks in person.</p>
+      <p class="signature reveal">— Emmanuel Moses</p>
+      <div class="skills reveal" aria-label="Stack">
+        <span class="chip">React</span><span class="chip">TypeScript</span>
+        <span class="chip">Tailwind</span><span class="chip">Node.js</span>
+        <span class="chip">MySQL</span><span class="chip">MongoDB</span>
+        <span class="chip">React Native</span><span class="chip">SEO</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="eyebrow reveal">Services — What I Build</p>
+      <h2 class="section-title reveal-words">Web Solutions, built<br>with <em>intention.</em></h2>
+    </header>
+    <div class="services-grid">
+      <article class="service reveal">
+        <span class="num">01</span>
+        <hr class="rule">
+        <h3>Business Websites</h3>
+        <p>Full websites for any type of business, built to look serious and convert visitors into customers. This covers restaurants and hospitality brands, service providers, professional firms, portfolios for creatives, and single page landing sites for launches and campaigns. Whatever the business, the goal is the same: a site that represents you well and does the selling for you</p>
+      </article>
+      <article class="service reveal">
+        <span class="num">02</span>
+        <hr class="rule">
+        <h3>SEO and Search Visibility</h3>
+        <p>A fast, well built website is only useful if people find it. This service covers technical SEO setup, on page optimization, structured data, and search friendly content structure, so your site ranks for the terms your customers are actually searching.</p>
+      </article>
+      <article class="service reveal">
+        <span class="num">03</span>
+        <hr class="rule">
+        <h3>Website Redesign and Rebuild</h3>
+        <p>An old website holding your business back gets rebuilt from the ground up. Same brand, sharper execution, faster load times, and a design that finally matches the quality of what you offer.</p>
+      </article>
+      <article class="service reveal">
+        <span class="num">04</span>
+        <hr class="rule">
+        <h3>Website Maintenance and Support</h3>
+        <p>Ongoing updates, content changes, bug fixes, and technical support after launch, so the site keeps performing without you having to manage it yourself.</p>
+      </article>
+
+      <article class="service reveal">
+        <span class="num">05</span>
+        <hr class="rule">
+        <h3>Something Else</h3>
+        <p>Have a project that doesn't fit the boxes above? Tell me what you're building. I'll tell you if I'm the right person for it.</p>
+      </article>
+    </div>
+    <p class="services-foot reveal"><em>Every project includes strategy, design, build, SEO setup, mobile polish, and post-launch support.</em></p>
+    <p class="reveal"><a href="#contact" class="link-ember">Discuss your project →</a></p>
+  </div>
+</section>
+
+<section id="process" class="section section-alt">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="eyebrow reveal">Process — How We Work Together</p>
+      <h2 class="section-title reveal-words">From first message<br>to launched site.</h2>
+    </header>
+    <ol class="process">
+      <li class="step reveal">
+        <span class="step-num">01</span>
+        <h3>Conversation</h3>
+        <p>We talk through your business, your customers, and what you actually need from a website. No pressure to buy more than necessary, just a clear picture of what will move your business forward.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">02</span>
+        <h3>Plan &amp; Deposit</h3>
+        <p>You receive a clear scope, timeline, and price before any work begins, so there are no surprise costs later. A fifty percent deposit secures your project slot and starts the build.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">03</span>
+        <h3>Build &amp; Refine</h3>
+        <p>The site gets built in stages, with review points at each major milestone. Adjustments happen at those checkpoints so the final result matches what you actually need, not a rushed first draft.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">04</span>
+        <h3>Launch &amp; Support</h3>
+        <p>The site goes live. You receive all files, hosting setup, and support after launch. If something needs a fix or a small change down the line, I remain reachable.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <p class="eyebrow reveal">Let's Build — Your Project</p>
+      <h2 class="section-title reveal-words">Have a business<br>that deserves<br><em>better online?</em></h2>
+      <p class="contact-sub reveal">I take on a handful of projects each month. Tell me what you're building and we'll figure out if we're a fit.</p>
+      <div class="contact-meta reveal">
+        <div><strong>Where I'm based</strong><p>Nigeria · Available remotely, worldwide</p></div>
+        <div><strong>How fast I reply</strong><p>Within 24 hours, usually the same day</p></div>
+        <div><strong>Availability</strong><p>Open for new projects right now</p></div>
+       
+       <!-- 
+        <div>
+          <strong>Direct</strong>
+          <div class="contact-direct">
+            <a href="mailto:devmosheh@gmail.com" class="btn btn-ghost btn-contact" aria-label="Send an email to Demira">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z M4 6l8 7 8-7"/></svg>
+              Send an Email
+            </a>
+            <a href="https://wa.me/2349059639220" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-contact" aria-label="Message Demira on WhatsApp">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12.04 2.5c-5.24 0-9.5 4.24-9.5 9.47 0 1.67.44 3.3 1.27 4.74L2.5 21.5l4.94-1.29a9.5 9.5 0 0 0 4.6 1.17h.01c5.24 0 9.5-4.24 9.5-9.47 0-2.53-.99-4.9-2.78-6.69a9.44 9.44 0 0 0-6.73-2.72zm5.55 13.55c-.24.66-1.4 1.29-1.9 1.34-.48.05-.9.24-3-.63-2.53-1.05-4.16-3.6-4.28-3.76-.13-.16-1.02-1.35-1.02-2.58 0-1.23.64-1.84.88-2.09.24-.25.52-.31.7-.31.17 0 .34 0 .49.01.16.01.37-.06.58.44.24.55.79 1.9.86 2.04.07.14.11.31.02.5-.09.19-.13.31-.27.47-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.42.11.57-.06.16-.17.66-.77.83-1.03.17-.26.35-.22.58-.13.24.09 1.51.71 1.77.84.26.13.43.19.5.31.06.11.06.65-.18 1.29z"/></svg>
+              Message on WhatsApp
+            </a>
+          </div>
+        </div> -->
+        
+        
+      </div>
+    </div>
+
+    <form class="c-form reveal" id="cForm" name="contact" method="POST" action="https://api.web3forms.com/submit" novalidate>
+      <input type="hidden" name="access_key" value="621d527b-831f-4339-a241-7bace1e35e04">
+      <input type="hidden" name="subject" value="New project inquiry from your website">
+      <input type="hidden" name="from_name" value="Demira Website">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="f-row">
+        <div class="f-group">
+          <label for="fn">Your name</label>
+          <input type="text" id="fn" name="name" placeholder="John Smith" required autocomplete="name" minlength="2" data-validate="name">
+          <span class="f-err" data-err-for="fn" hidden></span>
+        </div>
+        <div class="f-group">
+          <label for="fe">Your email</label>
+          <input type="email" id="fe" name="email" placeholder="john@company.com" required autocomplete="email" data-validate="email">
+          <span class="f-err" data-err-for="fe" hidden></span>
+        </div>
+      </div>
+      <div class="f-group">
+        <label for="fs">What do you need built?</label>
+        <select id="fs" name="service" required data-validate="service">
+          <option value="" disabled selected>Pick a service</option>
+          <option>Business Website</option>
+          <option>SEO and Search Visibility</option>
+          <option>
+Website Redesign and Rebuild</option>
+          <option>Website Maintenance and Support</option>
+         <!-- <option>Website Redesign</option> -->
+          <option value="Others">Others</option>
+        </select>
+        <span class="f-err" data-err-for="fs" hidden></span>
+      </div>
+      <div class="f-group f-others" id="fOthersGroup" hidden>
+        <label for="fo">Describe what you need</label>
+        <textarea id="fo" name="other_description" rows="3" placeholder="Tell me a bit about the project you have in mind" data-validate="other"></textarea>
+        <span class="f-err" data-err-for="fo" hidden></span>
+      </div>
+      <div class="f-group">
+        <label for="fm">Tell me about your project</label>
+        <textarea id="fm" name="message" rows="5" placeholder="What are you building? Who's it for? Any deadline?" required data-validate="message" minlength="20"></textarea>
+        <span class="f-err" data-err-for="fm" hidden></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="fSubmit" disabled>Send my message →</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="logo-placeholder.png" alt="Demira logo" width="40" height="40" class="brand-logo">
+      <p class="foot-tag">Websites that work while you sleep.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-contact">
+      <a href="mailto:devmosheh@gmail.com" aria-label="Send an email to Demira">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z M4 6l8 7 8-7"/></svg>
+        Send an Email
+      </a>
+      <a href="https://wa.me/2349059639220" target="_blank" rel="noopener noreferrer" aria-label="Message Demira on WhatsApp">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12.04 2.5c-5.24 0-9.5 4.24-9.5 9.47 0 1.67.44 3.3 1.27 4.74L2.5 21.5l4.94-1.29a9.5 9.5 0 0 0 4.6 1.17h.01c5.24 0 9.5-4.24 9.5-9.47 0-2.53-.99-4.9-2.78-6.69a9.44 9.44 0 0 0-6.73-2.72z"/></svg>
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+  <p class="copyline">© 2026 Demira · Emmanuel Moses. Designed and built in Nigeria. Working worldwide.</p>
+</footer>
+
+<!-- Scroll to top -->
+<button class="stb" id="stb" aria-label="Scroll to top" type="button">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- Floating support widget -->
+<div class="support" id="support">
+  <div class="support-actions" id="supportActions" aria-hidden="true">
+    <a href="mailto:devmosheh@gmail.com" class="support-action support-email" aria-label="Email" title="Email">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z M4 6l8 7 8-7"/></svg>
+    </a>
+    <a href="https://wa.me/2349059639220" target="_blank" rel="noopener noreferrer" class="support-action support-whatsapp" aria-label="WhatsApp" title="WhatsApp">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12.04 2.5c-5.24 0-9.5 4.24-9.5 9.47 0 1.67.44 3.3 1.27 4.74L2.5 21.5l4.94-1.29a9.5 9.5 0 0 0 4.6 1.17h.01c5.24 0 9.5-4.24 9.5-9.47 0-2.53-.99-4.9-2.78-6.69a9.44 9.44 0 0 0-6.73-2.72zm5.55 13.55c-.24.66-1.4 1.29-1.9 1.34-.48.05-.9.24-3-.63-2.53-1.05-4.16-3.6-4.28-3.76-.13-.16-1.02-1.35-1.02-2.58 0-1.23.64-1.84.88-2.09.24-.25.52-.31.7-.31.17 0 .34 0 .49.01.16.01.37-.06.58.44.24.55.79 1.9.86 2.04.07.14.11.31.02.5-.09.19-.13.31-.27.47-.13.16-.28.35-.4.47-.13.13-.27.27-.12.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.42.11.57-.06.16-.17.66-.77.83-1.03.17-.26.35-.22.58-.13.24.09 1.51.71 1.77.84.26.13.43.19.5.31.06.11.06.65-.18 1.29z"/></svg>
+    </a>
+  </div>
+  <button class="support-toggle" id="supportToggle" aria-label="Open contact options" aria-expanded="false" type="button">
+    <svg class="support-icon-help" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9.1 9a3 3 0 1 1 5.83 1c0 2-3 2.5-3 4.5"/><circle cx="12" cy="18.5" r="1.1" fill="currentColor"/><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    <svg class="support-icon-close" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
