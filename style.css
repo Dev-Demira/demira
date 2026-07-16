@@ -120,7 +120,7 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
   display: flex; align-items: center; justify-content: space-between; gap: var(--space-5);
 }
 .brand { display: inline-flex; align-items: center; }
-.brand-logo { height: 50px; width: 70px; display: block; }
+.brand-logo { height: 50px; width: 500px; display: block; }
 .nav-links { display: flex; gap: var(--space-6); }
 .nav-links a {
   font-size: 0.95rem;
